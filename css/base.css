@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-green-300);
+  border: 3px solid var(--color-gray-50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #92c25f;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+/* Шрифты */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* 1. Палитра */
+  --color-white: #ffffff;
+  --color-green-300: #b9ff66;
+  --color-black-900: #191a24;
+  --color-dark-900: #191a23;
+  --color-gray-50: #f3f3f3;
+  --color-gray-900: #292a32;
+
+  --section-margin-top: 40px;
+  --border-radius: 24px;
+  /* 2. Семантические переменные */
+  --bg-primary: var(--color-white);
+  --text-color: var(--color-black-900);
+
+  --btn-color: var(--color-black-900);
+
+  --card-bg: var(--color-gray-50);
+  --card-text-bg: var(--color-green-300);
+
+  --font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+section {
+  scroll-margin-top: 110px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background: var(--bg-primary);
+}
+
+button {
+  font-family: var(--font-family);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
