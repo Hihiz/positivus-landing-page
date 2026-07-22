@@ -394,6 +394,17 @@
   .hero-info img {
     max-height: 425px;
   }
+
+  .footer-attribution {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .footer-attribution span {
+    display: inline;
+  }
 }
 
 @media (min-width: 1280px) {
