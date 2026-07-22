@@ -665,13 +665,12 @@
   cursor: pointer;
   width: 14px;
   height: 14px;
-  background-image: url("/img/testimonials/star.svg");
-
+  background-image: url("../img/testimonials/star.svg");
   transition: transform 0.2s ease;
 }
 
 .nav-dot.active {
-  background-image: url("/img/testimonials/active-star.svg");
+  background-image: url("../img/testimonials/active-star.svg");
   transform: scale(1.8);
 }
 
