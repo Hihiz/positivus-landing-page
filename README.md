@@ -55,6 +55,7 @@
 - Ленивая загрузка (lazy loading) для изображений
 
 ### Lighthouse скриншот
+
 ![](/screenshots/lighthouse.png)
 
 ## 📖 Доступность(Accessibility)
@@ -115,3 +116,11 @@ python -m http.server 8000
 ### Mobile (375px)
 
 ![](/screenshots/mobile.png)
+
+## 📄 Лицензия
+
+**Автор дизайна:** [Olga](https://www.figma.com/@olgaaverchenko)  
+**Макет:** [Positivus Landing Page Design](https://www.figma.com/community/file/1230604708032389430/positivus-landing-page-design)  
+**Лицензия:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+Полный текст лицензии [LICENSE](https://github.com/Hihiz/positivus-landing-page/blob/develop/LICENSE)
