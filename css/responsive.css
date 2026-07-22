@@ -186,7 +186,14 @@
   }
 
   .footer .container {
-    padding-inline: 45px;
+    background: none;
+    border-radius: none;
+  }
+
+  .footer-group {
+    background: var(--color-dark-900);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    margin-inline: 48px;
   }
 }
 
@@ -305,7 +312,7 @@
   }
 
   .footer-group {
-    padding-inline: 55px;
+    padding-inline: 45px;
     padding-block: 45px;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -325,6 +332,7 @@
   .footer-info-contact {
     flex-direction: column;
     align-items: flex-start;
+    flex-shrink: 0;
   }
 
   .privacy-footer {
@@ -352,21 +360,19 @@
   .subscribe-form {
     column-gap: 30px;
     flex-direction: row;
-    width: 100%;
     align-items: center;
     height: 100%;
+    max-width: 650px;
     margin-inline: 0;
     padding-inline: 20px;
   }
 
   .email-input {
-    height: 66px;
-    width: 80%;
+    flex: 1;
   }
 
   .subscribe-button {
-    height: 66px;
-    width: 100%;
+    white-space: nowrap;
   }
 
   .privacy-footer {
