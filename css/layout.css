@@ -151,7 +151,6 @@
 
 .hero-info img {
   max-height: 300px;
-  max-width: 550px;
   margin: 0 auto;
 }
 
@@ -639,9 +638,6 @@
   height: 25px;
 }
 
-.navigation-arrow-next {
-}
-
 .testimonial-navigation {
   display: flex;
   justify-content: center;
@@ -780,10 +776,12 @@
   margin-top: calc(var(--section-margin-top) * 3.5);
 }
 
-.footer-group {
+.footer .container {
   background: var(--color-dark-900);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
 
+.footer-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -812,10 +810,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
-}
-
-.footer .container {
-  padding-inline: 0;
 }
 
 .footer-social-icon {
@@ -858,12 +852,12 @@
 .subscribe-form {
   display: flex;
   padding-block: 58px;
-  padding-inline: 40px;
+  padding-inline: 20px;
   background: var(--color-gray-900);
   border-radius: 10px;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   margin-inline: auto;
   row-gap: 20px;
 }
