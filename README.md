@@ -3,7 +3,7 @@
 Современный адаптивный лендинг для digital-агентства, сверстанный по макету из Figma.
 
 ## 🌐 Demo
-
+[![Tag](https://img.shields.io/badge/Tags-Active-brightgreen?style=flat-square&logo=github)](https://github.com/Hihiz/positivus-landing-page/tags)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=flat-square&logo=github)](https://hihiz.github.io/positivus-landing-page/)
 ![W3C-Validated](https://img.shields.io/badge/W3C-Validated-brightgreen?style=flat-square&logo=w3c)
 [![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-97-brightgreen?style=flat-square&logo=lighthouse)](https://developer.chrome.com/docs/lighthouse)
