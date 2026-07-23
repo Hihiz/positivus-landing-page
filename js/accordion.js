@@ -1,34 +1,36 @@
 export function initAccordion() {
-  const processItem = document.querySelectorAll(".process-item");
+  const processItemGroup = document.querySelector(".working-process-group");
+  if (!processItemGroup) return;
 
-  if (!processItem.length) return;
+  const firstProcessItem = processItemGroup.firstElementChild;
+  if (!firstProcessItem) return;
 
-  processItem[0].classList.add("active");
-  processItem[0].querySelector(".icon-show-process").src =
+  firstProcessItem.classList.add("active");
+  firstProcessItem.querySelector(".icon-show-process").src =
     "img/working-process/minus-icon.svg";
 
-  for (let i = 0; i < processItem.length; i++) {
-    const element = processItem[i];
-    const button = element.querySelector(".button-process");
-    const icon = element.querySelector(".icon-show-process");
+  processItemGroup.addEventListener("click", (e) => {
+    const button = e.target.closest(".button-process");
+    if (!button) return;
 
-    element.addEventListener("click", () => {
-      const isActive = element.classList.contains("active");
+    const processItem = button.closest(".process-item");
+    const processItems = processItemGroup.querySelectorAll(".process-item");
+    const isActive = processItem.classList.contains("active");
 
-      if (isActive) {
-        removeActiveClassProcessItem(element);
-        return;
-      }
+    if (isActive) {
+      removeActiveClassProcessItem(processItem);
+      return;
+    }
 
-      processItem.forEach((e) => {
-        removeActiveClassProcessItem(e);
-      });
-
-      element.classList.add("active");
-      element.querySelector(".process-content").classList.add("is-open");
-      icon.src = "img/working-process/minus-icon.svg";
+    processItems.forEach((item) => {
+      removeActiveClassProcessItem(item);
     });
-  }
+
+    processItem.classList.add("active");
+    processItem.querySelector(".process-content").classList.add("is-open");
+    processItem.querySelector(".icon-show-process").src =
+      "img/working-process/minus-icon.svg";
+  });
 }
 
 function removeActiveClassProcessItem(element) {
