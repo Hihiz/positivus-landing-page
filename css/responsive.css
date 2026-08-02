@@ -181,10 +181,6 @@
     column-gap: 30px;
   }
 
-  .subscribe-form {
-    max-width: 60%;
-  }
-
   .footer .container {
     background: none;
     border-radius: none;
@@ -358,13 +354,7 @@
   }
 
   .subscribe-form {
-    column-gap: 30px;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    max-width: 650px;
-    margin-inline: 0;
-    padding-inline: 20px;
+    max-width: 450px;
   }
 
   .email-input {
@@ -415,5 +405,11 @@
 
   .card-logo {
     width: 210px;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    max-width: 60%;
+    column-gap: 20px;
   }
 }
