@@ -395,6 +395,16 @@
   .footer-attribution span {
     display: inline;
   }
+
+  .team-card {
+    padding-inline: 10px;
+    padding-block: 30px;
+  }
+
+  .team-card-grid {
+    row-gap: 20px;
+    column-gap: 10px;
+  }
 }
 
 @media (min-width: 1280px) {
